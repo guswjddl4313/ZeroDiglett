@@ -6,34 +6,16 @@ from modules.wordpress_crawler import SlugList, SlugDownload
 
 
 if __name__ == "__main__":
-    # parser = optparse.OptionParser('-u <option> -d <option> -x <option> -p <option> -s <option>')
-    # parser.add_option('-u', dest='update', type='string', help='update slug list')
+    parser = optparse.OptionParser('-u -d 2 5 -x <option> -p <option> -s <option>')
+    parser.add_option('-u', '--update', dest='update', help='update slug list')
+    parser.add_option('-d', '--download', dest='download', nargs=2, type='int', help='Download items starting from the specified line number. '
+         'The first argument is the starting line, and the second argument is the number of items to download.')
 
-    # options, args = parser.parse_args()
+    (options, args) = parser.parse_args()
 
-    # print(parser.usage)
-    # try:
-    #     options, args = getopt.getopt(sys.argv[1:], 'u:d:xps')
-    #     print(options)
 
-    #     if options == []:
-    #         print("haha")
-
-    #     for op, p in options:
-    #         if op == '-u' or op == '--update':
-    #             print(f'option -u : {p}')
-    #             #SlugList.get_slug_list()
-    #         elif op == '-d' or op == '--download':
-    #             print(f'option -d : {p}')
-    #             #SlugDownload().download_plugin(p)
-    #         elif op == '-x' or op == '--XSS':
-    #             print(f'option -x : {p}')
-    #         elif op == '-p' or op == '--POI':
-    #             print(f'option -p : {p}')
-    #         elif op == '-s' or op == '--SQL':
-    #             print(f'option -s : {p}')
-
-    # except getopt.GetoptError as e:
-    #     print(USAGE)
-    #SlugList().get_slug_list()
-    SlugDownload().get_plugin(2, 5)
+    if options.update:
+        SlugList().get_slug_list()
+    elif options.download:
+        first_num, count = options.download
+        SlugDownload().get_plugin(first_num, count)
