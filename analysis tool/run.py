@@ -3,18 +3,15 @@ from modules.wordpress_crawler import SlugList, SlugDownload
 #from modules.exploit.cross_site_scripting import class_name
 #from modules.exploit.sql_injection import class_name
 #from modules.exploit.php_object_injection import class_name
-USAGE = """
-Usage: run.py [options]
-"""
 
 
 if __name__ == "__main__":
-    parser = optparse.OptionParser('-u <option> -d <option> -x <option> -p <option> -s <option>')
-    parser.add_option('-u', dest='update', type='string', help='update slug list')
+    # parser = optparse.OptionParser('-u <option> -d <option> -x <option> -p <option> -s <option>')
+    # parser.add_option('-u', dest='update', type='string', help='update slug list')
 
-    options, args = parser.parse_args()
+    # options, args = parser.parse_args()
 
-    print(parser.usage)
+    # print(parser.usage)
     # try:
     #     options, args = getopt.getopt(sys.argv[1:], 'u:d:xps')
     #     print(options)
@@ -38,6 +35,5 @@ if __name__ == "__main__":
 
     # except getopt.GetoptError as e:
     #     print(USAGE)
-    #SlugList().get_slug_list()
-    #SlugDownload().download_plugin('predictive-search')
-    #SlugDownload().get_plugin(2, 5)
+    SlugList().get_slug_list()
+    SlugDownload().get_plugin(2, 5)

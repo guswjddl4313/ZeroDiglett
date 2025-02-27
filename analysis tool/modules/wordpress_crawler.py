@@ -92,17 +92,16 @@ class SlugDownload:
         self.url = slug_download_url
         self.slug_list_file = slug_list_dir + slug_list_file_name
 
-    def download(self, slug):
-        url = self.url + slug
+    def download(self, slug): # 플러그인 다운로드 함수
+        url = self.url + slug # 다운로드 링크 + 슬러그
         response = requests.get(url)
 
         result = {}
-        matches = re.findall(r's:(\d+):"(.*?)";|i:(\d+);|b:(\d);|a:(\d+):{|}', response.text)
+        matches = re.findall(r's:(\d+):"(.*?)";|i:(\d+);|b:(\d);|a:(\d+):{|}', response.text) # 직렬화된 데이터 파싱
     
         i = 0
-        while i < len(matches):
-            if matches[i][0]:  # s:(length):(string) case
-                key_length = int(matches[i][0])
+        while i < len(matches): # 위 정규표현식으로 파싱한 결과를 딕셔너리로 변환
+            if matches[i][0]:
                 key = matches[i][1]
                 i += 1
                 if matches[i][0]:
@@ -112,7 +111,7 @@ class SlugDownload:
                 elif matches[i][3]:
                     value = bool(matches[i][3])
                 else:
-                    value = None  # or parse recursively if it contains nested structures
+                    value = None
                 result[key] = value
             i += 1
         
@@ -120,22 +119,21 @@ class SlugDownload:
         print(f"slug : {result['slug']}")
         print(f"version : {result['version']}\n")
 
-        plugin_zip_url = result['trunk']
+        plugin_zip_url = result['trunk'] # 플러그인 다운로드 링크
 
-        plugin_zip = requests.get(plugin_zip_url)
+        plugin_zip = requests.get(plugin_zip_url) # 플러그인 다운로드 zip
         with open(plugins_dir + slug + '.zip', 'wb') as f:
             f.write(plugin_zip.content)
 
-    def read_plugin_list(self, first_idx, count):
+    def read_plugin_list(self, first_idx, count): # slug 리스트 파일에서 플러그인 목록 읽기
         idx = first_idx - 1
         with open(self.slug_list_file, 'r') as f:
             lines = f.readlines()
             return lines[idx:idx+count]
         
-    def get_plugin(self, first_idx, count):
+    def get_plugin(self, first_idx, count): # 입력받은 인덱스만큼 플러그인 다운로드
         slugs = self.read_plugin_list(first_idx, count)
         for slug in slugs:
-            #print(slug.split()[0])
             self.download(slug.split()[0])
 
 
