@@ -35,5 +35,5 @@ if __name__ == "__main__":
 
     # except getopt.GetoptError as e:
     #     print(USAGE)
-    SlugList().get_slug_list()
+    #SlugList().get_slug_list()
     SlugDownload().get_plugin(2, 5)

@@ -3,6 +3,7 @@ import os
 import re
 import requests
 import threading
+import zipfile
 
 # 워드프레스 slug 리스트 및 다운로드 url
 slug_list_url = "https://api.wordpress.org/plugins/info/1.2/?action=query_plugins&request[page]="
@@ -134,7 +135,14 @@ class SlugDownload:
     def get_plugin(self, first_idx, count): # 입력받은 인덱스만큼 플러그인 다운로드
         slugs = self.read_plugin_list(first_idx, count)
         for slug in slugs:
-            self.download(slug.split()[0])
+            slug = slug.split()[0]
+            self.download(slug)
+            self.extract_zip(slug)
+
+    def extract_zip(self, slug): # 다운로드 받은 플러그인 압축 해제
+        with zipfile.ZipFile(plugins_dir + slug + '.zip', 'r') as zip_ref:
+            zip_ref.extractall(plugins_dir + slug)
+        os.remove(plugins_dir + slug + '.zip')
 
 
 
