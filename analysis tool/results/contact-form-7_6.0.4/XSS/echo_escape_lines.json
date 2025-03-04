@@ -1,0 +1,734 @@
+[
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\admin.php",
+        "line": 420,
+        "context": "html",
+        "code": "echo esc_html( __( 'Contact Forms', 'contact-form-7' ) );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\admin.php",
+        "line": 458,
+        "context": "attr",
+        "code": "<input type=\"hidden\" name=\"page\" value=\"<?php echo esc_attr( $_REQUEST['page'] ); ?>\" />"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\admin.php",
+        "line": 511,
+        "context": "html",
+        "code": "<h1><?php echo esc_html( __( 'Integration with External API', 'contact-form-7' ) ); ?></h1>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\edit-contact-form.php",
+        "line": 79,
+        "context": "attr",
+        "code": "<input type=\"hidden\" id=\"wpcf7-locale\" name=\"wpcf7-locale\" value=\"<?php echo esc_attr( $post->locale() ); ?>\" />"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\edit-contact-form.php",
+        "line": 81,
+        "context": "attr",
+        "code": "<input type=\"hidden\" id=\"active-tab\" name=\"active-tab\" value=\"<?php echo esc_attr( $_GET['active-tab'] ?? '' ); ?>\" />"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\edit-contact-form.php",
+        "line": 160,
+        "context": "html",
+        "code": "<h2><?php echo esc_html( __( 'Status', 'contact-form-7' ) ); ?></h2>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\edit-contact-form.php",
+        "line": 167,
+        "context": "attr",
+        "code": "<input type=\"submit\" class=\"button-primary\" name=\"wpcf7-save\" value=\"<?php echo esc_attr( __( 'Save', 'contact-form-7' ) ); ?>\" />"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\edit-contact-form.php",
+        "line": 232,
+        "context": "html",
+        "code": "<h2><?php echo esc_html( __( \"Do you need help?\", 'contact-form-7' ) ); ?></h2>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\edit-contact-form.php",
+        "line": 234,
+        "context": "html",
+        "code": "<p><?php echo esc_html( __( \"Here are some available options to help solve your problems.\", 'contact-form-7' ) ); ?></p>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\config-validator.php",
+        "line": 127,
+        "context": "html",
+        "code": "<h1><?php echo esc_html( __( 'Validate Configuration', 'contact-form-7' ) ); ?></h1>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\config-validator.php",
+        "line": 132,
+        "context": "attr",
+        "code": "<p><input type=\"submit\" class=\"button\" value=\"<?php echo esc_attr( $submit_text ); ?>\" /></p>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\editor.php",
+        "line": 85,
+        "context": "html",
+        "code": "<h2><?php echo esc_html( __( 'Form', 'contact-form-7' ) ); ?></h2>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\editor.php",
+        "line": 95,
+        "context": "textarea",
+        "code": "<textarea id=\"wpcf7-form\" name=\"wpcf7-form\" cols=\"100\" rows=\"24\" class=\"large-text code\" data-config-field=\"form.body\"><?php echo esc_textarea( $post->prop( 'form' ) ); ?></textarea>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\editor.php",
+        "line": 136,
+        "context": "attr",
+        "code": "<div class=\"contact-form-editor-box-mail\" id=\"<?php echo esc_attr( $id ); ?>\">"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\editor.php",
+        "line": 137,
+        "context": "html",
+        "code": "<h2><?php echo esc_html( $options['title'] ); ?></h2>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\editor.php",
+        "line": 165,
+        "context": "attr",
+        "code": "<fieldset id=\"<?php echo esc_attr( sprintf( '%s-fieldset', $id ) ); ?>\">"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\editor.php",
+        "line": 177,
+        "context": "html",
+        "code": "echo esc_html( __( \"In the following fields, you can use these mail-tags:\","
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\editor.php",
+        "line": 187,
+        "context": "html",
+        "code": "<label for=\"<?php echo $id; ?>-recipient\"><?php echo esc_html( __( 'To', 'contact-form-7' ) ); ?></label>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\editor.php",
+        "line": 190,
+        "context": "attr",
+        "code": "<input type=\"text\" id=\"<?php echo $id; ?>-recipient\" name=\"<?php echo $id; ?>[recipient]\" class=\"large-text code\" size=\"70\" value=\"<?php echo esc_attr( $mail['recipient'] ); ?>\" data-config-field=\"<?php echo sprintf( '%s.recipient', esc_attr( $options['name'] ) ); ?>\" />"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\editor.php",
+        "line": 196,
+        "context": "html",
+        "code": "<label for=\"<?php echo $id; ?>-sender\"><?php echo esc_html( __( 'From', 'contact-form-7' ) ); ?></label>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\editor.php",
+        "line": 199,
+        "context": "attr",
+        "code": "<input type=\"text\" id=\"<?php echo $id; ?>-sender\" name=\"<?php echo $id; ?>[sender]\" class=\"large-text code\" size=\"70\" value=\"<?php echo esc_attr( $mail['sender'] ); ?>\" data-config-field=\"<?php echo sprintf( '%s.sender', esc_attr( $options['name'] ) ); ?>\" />"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\editor.php",
+        "line": 205,
+        "context": "html",
+        "code": "<label for=\"<?php echo $id; ?>-subject\"><?php echo esc_html( __( 'Subject', 'contact-form-7' ) ); ?></label>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\editor.php",
+        "line": 208,
+        "context": "attr",
+        "code": "<input type=\"text\" id=\"<?php echo $id; ?>-subject\" name=\"<?php echo $id; ?>[subject]\" class=\"large-text code\" size=\"70\" value=\"<?php echo esc_attr( $mail['subject'] ); ?>\" data-config-field=\"<?php echo sprintf( '%s.subject', esc_attr( $options['name'] ) ); ?>\" />"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\editor.php",
+        "line": 214,
+        "context": "html",
+        "code": "<label for=\"<?php echo $id; ?>-additional-headers\"><?php echo esc_html( __( 'Additional headers', 'contact-form-7' ) ); ?></label>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\editor.php",
+        "line": 217,
+        "context": "attr",
+        "code": "<textarea id=\"<?php echo $id; ?>-additional-headers\" name=\"<?php echo $id; ?>[additional_headers]\" cols=\"100\" rows=\"4\" class=\"large-text code\" data-config-field=\"<?php echo sprintf( '%s.additional_headers', esc_attr( $options['name'] ) ); ?>\"><?php echo esc_textarea( $mail['additional_headers'] ); ?></textarea>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\editor.php",
+        "line": 217,
+        "context": "textarea",
+        "code": "<textarea id=\"<?php echo $id; ?>-additional-headers\" name=\"<?php echo $id; ?>[additional_headers]\" cols=\"100\" rows=\"4\" class=\"large-text code\" data-config-field=\"<?php echo sprintf( '%s.additional_headers', esc_attr( $options['name'] ) ); ?>\"><?php echo esc_textarea( $mail['additional_headers'] ); ?></textarea>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\editor.php",
+        "line": 223,
+        "context": "html",
+        "code": "<label for=\"<?php echo $id; ?>-body\"><?php echo esc_html( __( 'Message body', 'contact-form-7' ) ); ?></label>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\editor.php",
+        "line": 226,
+        "context": "attr",
+        "code": "<textarea id=\"<?php echo $id; ?>-body\" name=\"<?php echo $id; ?>[body]\" cols=\"100\" rows=\"18\" class=\"large-text code\" data-config-field=\"<?php echo sprintf( '%s.body', esc_attr( $options['name'] ) ); ?>\"><?php echo esc_textarea( $mail['body'] ); ?></textarea>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\editor.php",
+        "line": 226,
+        "context": "textarea",
+        "code": "<textarea id=\"<?php echo $id; ?>-body\" name=\"<?php echo $id; ?>[body]\" cols=\"100\" rows=\"18\" class=\"large-text code\" data-config-field=\"<?php echo sprintf( '%s.body', esc_attr( $options['name'] ) ); ?>\"><?php echo esc_textarea( $mail['body'] ); ?></textarea>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\editor.php",
+        "line": 228,
+        "context": "html",
+        "code": "<p><label for=\"<?php echo $id; ?>-exclude-blank\"><input type=\"checkbox\" id=\"<?php echo $id; ?>-exclude-blank\" name=\"<?php echo $id; ?>[exclude_blank]\" value=\"1\"<?php echo ( ! empty( $mail['exclude_blank'] ) ) ? ' checked=\"checked\"' : ''; ?> /> <?php echo esc_html( __( 'Exclude lines with blank mail-tags from output', 'contact-form-7' ) ); ?></label></p>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\editor.php",
+        "line": 230,
+        "context": "html",
+        "code": "<p><label for=\"<?php echo $id; ?>-use-html\"><input type=\"checkbox\" id=\"<?php echo $id; ?>-use-html\" name=\"<?php echo $id; ?>[use_html]\" value=\"1\"<?php echo ( $mail['use_html'] ) ? ' checked=\"checked\"' : ''; ?> /> <?php echo esc_html( __( 'Use HTML content type', 'contact-form-7' ) ); ?></label></p>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\editor.php",
+        "line": 236,
+        "context": "html",
+        "code": "<label for=\"<?php echo $id; ?>-attachments\"><?php echo esc_html( __( 'File attachments', 'contact-form-7' ) ); ?></label>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\editor.php",
+        "line": 239,
+        "context": "attr",
+        "code": "<textarea id=\"<?php echo $id; ?>-attachments\" name=\"<?php echo $id; ?>[attachments]\" cols=\"100\" rows=\"4\" class=\"large-text code\" data-config-field=\"<?php echo sprintf( '%s.attachments', esc_attr( $options['name'] ) ); ?>\"><?php echo esc_textarea( $mail['attachments'] ); ?></textarea>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\editor.php",
+        "line": 239,
+        "context": "textarea",
+        "code": "<textarea id=\"<?php echo $id; ?>-attachments\" name=\"<?php echo $id; ?>[attachments]\" cols=\"100\" rows=\"4\" class=\"large-text code\" data-config-field=\"<?php echo sprintf( '%s.attachments', esc_attr( $options['name'] ) ); ?>\"><?php echo esc_textarea( $mail['attachments'] ); ?></textarea>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\editor.php",
+        "line": 265,
+        "context": "html",
+        "code": "<h2><?php echo esc_html( __( 'Messages', 'contact-form-7' ) ); ?></h2>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\editor.php",
+        "line": 276,
+        "context": "html",
+        "code": "<label for=\"<?php echo $field_id; ?>\"><?php echo esc_html( $arr['description'] ); ?><br />"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\editor.php",
+        "line": 277,
+        "context": "attr",
+        "code": "<input type=\"text\" id=\"<?php echo $field_id; ?>\" name=\"<?php echo $field_name; ?>\" class=\"large-text\" size=\"70\" value=\"<?php echo esc_attr( $post->message( $key, false ) ); ?>\" data-config-field=\"<?php echo sprintf( 'messages.%s', esc_attr( $key ) ); ?>\" />"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\editor.php",
+        "line": 296,
+        "context": "html",
+        "code": "<h2><?php echo esc_html( __( 'Additional Settings', 'contact-form-7' ) ); ?></h2>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\editor.php",
+        "line": 299,
+        "context": "textarea",
+        "code": "<textarea id=\"wpcf7-additional-settings\" name=\"wpcf7-additional-settings\" cols=\"100\" rows=\"8\" class=\"large-text\" data-config-field=\"additional_settings.body\"><?php echo esc_textarea( $post->prop( 'additional_settings' ) ); ?></textarea>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\tag-generator.php",
+        "line": 197,
+        "context": "attr",
+        "code": "<legend id=\"<?php echo esc_attr( $this->ref( 'type-legend' ) ); ?>\"><?php"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\tag-generator.php",
+        "line": 198,
+        "context": "html",
+        "code": "echo esc_html( __( 'Field type', 'contact-form-7' ) );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\tag-generator.php",
+        "line": 201,
+        "context": "attr",
+        "code": "<select data-tag-part=\"basetype\" aria-labelledby=\"<?php echo esc_attr( $this->ref( 'type-legend' ) ); ?>\"><?php"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\tag-generator.php",
+        "line": 217,
+        "context": "html",
+        "code": "<?php echo esc_html( __( \"This is a required field.\", 'contact-form-7' ) ); ?>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\tag-generator.php",
+        "line": 235,
+        "context": "attr",
+        "code": "<legend id=\"<?php echo esc_attr( $this->ref( 'name-legend' ) ); ?>\"><?php"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\tag-generator.php",
+        "line": 236,
+        "context": "html",
+        "code": "echo esc_html( __( 'Field name', 'contact-form-7' ) );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\tag-generator.php",
+        "line": 238,
+        "context": "attr",
+        "code": "<input type=\"text\" data-tag-part=\"name\" pattern=\"[A-Za-z][A-Za-z0-9_\\-]*\" aria-labelledby=\"<?php echo esc_attr( $this->ref( 'name-legend' ) ); ?>\" />"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\tag-generator.php",
+        "line": 276,
+        "context": "attr",
+        "code": "<input type=\"checkbox\" data-tag-part=\"option\" data-tag-option=\"<?php echo esc_attr( $tag_option ); ?>\" />"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\tag-generator.php",
+        "line": 277,
+        "context": "html",
+        "code": "<?php echo esc_html( $label ); ?>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\tag-generator.php",
+        "line": 293,
+        "context": "attr",
+        "code": "<legend id=\"<?php echo esc_attr( $this->ref( 'id-legend' ) ); ?>\"><?php"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\tag-generator.php",
+        "line": 294,
+        "context": "html",
+        "code": "echo esc_html( __( 'ID attribute', 'contact-form-7' ) );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\tag-generator.php",
+        "line": 296,
+        "context": "attr",
+        "code": "<input type=\"text\" data-tag-part=\"option\" data-tag-option=\"id:\" pattern=\"[A-Za-z][A-Za-z0-9_\\-]*\" aria-labelledby=\"<?php echo esc_attr( $this->ref( 'id-legend' ) ); ?>\" />"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\tag-generator.php",
+        "line": 308,
+        "context": "attr",
+        "code": "<legend id=\"<?php echo esc_attr( $this->ref( 'class-legend' ) ); ?>\"><?php"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\tag-generator.php",
+        "line": 309,
+        "context": "html",
+        "code": "echo esc_html( __( 'Class attribute', 'contact-form-7' ) );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\tag-generator.php",
+        "line": 311,
+        "context": "attr",
+        "code": "<input type=\"text\" data-tag-part=\"option\" data-tag-option=\"class:\" pattern=\"[A-Za-z0-9_\\-\\s]*\" aria-labelledby=\"<?php echo esc_attr( $this->ref( 'class-legend' ) ); ?>\" />"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\tag-generator.php",
+        "line": 332,
+        "context": "html",
+        "code": "echo esc_html( $options['title'] );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\tag-generator.php",
+        "line": 335,
+        "context": "html",
+        "code": "echo esc_html( __( 'Min', 'contact-form-7' ) ) . \"\\n\";"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\tag-generator.php",
+        "line": 349,
+        "context": "html",
+        "code": "echo esc_html( __( 'Max', 'contact-form-7' ) ) . \"\\n\";"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\tag-generator.php",
+        "line": 379,
+        "context": "attr",
+        "code": "<legend id=\"<?php echo esc_attr( $this->ref( 'value-legend' ) ); ?>\"><?php"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\tag-generator.php",
+        "line": 380,
+        "context": "html",
+        "code": "echo esc_html( $options['title'] );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\tag-generator.php",
+        "line": 396,
+        "context": "html",
+        "code": "<input type=\"checkbox\" data-tag-part=\"option\" data-tag-option=\"placeholder\" /> <?php echo esc_html( __( \"Use this text as the placeholder.\", 'contact-form-7' ) ); ?>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\tag-generator.php",
+        "line": 416,
+        "context": "attr",
+        "code": "<legend id=\"<?php echo esc_attr( $this->ref( 'selectable-values-legend' ) ); ?>\"><?php"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\tag-generator.php",
+        "line": 417,
+        "context": "html",
+        "code": "echo esc_html( __( 'Selectable values', 'contact-form-7' ) );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\tag-generator.php",
+        "line": 498,
+        "context": "html",
+        "code": "<button type=\"button\" class=\"button button-primary\" data-taggen=\"insert-tag\"><?php echo esc_html( __( 'Insert Tag', 'contact-form-7' ) ); ?></button>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\welcome-panel.php",
+        "line": 209,
+        "context": "attr",
+        "code": "<div id=\"wpcf7-welcome-panel\" class=\"<?php echo esc_attr( $classes ); ?>\">"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\welcome-panel.php",
+        "line": 211,
+        "context": "html",
+        "code": "<a class=\"welcome-panel-close\" href=\"<?php echo esc_url( menu_page_url( 'wpcf7', false ) ); ?>\"><?php echo esc_html( __( 'Dismiss', 'contact-form-7' ) ); ?></a>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\admin\\includes\\welcome-panel.php",
+        "line": 211,
+        "context": "url",
+        "code": "<a class=\"welcome-panel-close\" href=\"<?php echo esc_url( menu_page_url( 'wpcf7', false ) ); ?>\"><?php echo esc_html( __( 'Dismiss', 'contact-form-7' ) ); ?></a>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\includes\\integration.php",
+        "line": 139,
+        "context": "attr",
+        "code": "<div class=\"card<?php echo $service->is_active() ? ' active' : ''; ?>\" id=\"<?php echo esc_attr( $name ); ?>\">"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\includes\\integration.php",
+        "line": 141,
+        "context": "html",
+        "code": "<h2 class=\"title\"><?php echo esc_html( $service->get_title() ); ?></h2>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\includes\\integration.php",
+        "line": 143,
+        "context": "html",
+        "code": "<?php echo esc_html( implode( ', ', $cats ) ); ?>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\acceptance.php",
+        "line": 266,
+        "context": "html",
+        "code": "echo esc_html( $field_types['acceptance']['heading'] );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\acceptance.php",
+        "line": 285,
+        "context": "attr",
+        "code": "<legend id=\"<?php echo esc_attr( $tgg->ref( 'type-legend' ) ); ?>\"><?php"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\acceptance.php",
+        "line": 286,
+        "context": "html",
+        "code": "echo esc_html( __( 'Field type', 'contact-form-7' ) );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\acceptance.php",
+        "line": 289,
+        "context": "attr",
+        "code": "<select data-tag-part=\"basetype\" aria-labelledby=\"<?php echo esc_attr( $tgg->ref( 'type-legend' ) ); ?>\"><?php"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\acceptance.php",
+        "line": 301,
+        "context": "html",
+        "code": "<?php echo esc_html( __( \"This checkbox is optional.\", 'contact-form-7' ) ); ?>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\acceptance.php",
+        "line": 312,
+        "context": "attr",
+        "code": "<legend id=\"<?php echo esc_attr( $tgg->ref( 'value-legend' ) ); ?>\"><?php"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\acceptance.php",
+        "line": 313,
+        "context": "html",
+        "code": "echo esc_html( __( 'Condition', 'contact-form-7' ) );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\checkbox.php",
+        "line": 387,
+        "context": "html",
+        "code": "echo esc_html( $field_types[$basetype]['heading'] );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\date.php",
+        "line": 205,
+        "context": "html",
+        "code": "echo esc_html( $field_types['date']['heading'] );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\file.php",
+        "line": 162,
+        "context": "html",
+        "code": "echo esc_html( $field_types['file']['heading'] );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\file.php",
+        "line": 194,
+        "context": "attr",
+        "code": "<legend id=\"<?php echo esc_attr( $tgg->ref( 'filetypes-option-legend' ) ); ?>\"><?php"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\file.php",
+        "line": 195,
+        "context": "html",
+        "code": "echo esc_html( __( 'Acceptable file types', 'contact-form-7' ) );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\file.php",
+        "line": 222,
+        "context": "attr",
+        "code": "<legend id=\"<?php echo esc_attr( $tgg->ref( 'limit-option-legend' ) ); ?>\"><?php"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\file.php",
+        "line": 223,
+        "context": "html",
+        "code": "echo esc_html( __( 'File size limit', 'contact-form-7' ) );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\number.php",
+        "line": 224,
+        "context": "html",
+        "code": "echo esc_html( $field_types['number']['heading'] );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\quiz.php",
+        "line": 216,
+        "context": "html",
+        "code": "echo esc_html( $field_types['quiz']['heading'] );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\quiz.php",
+        "line": 247,
+        "context": "attr",
+        "code": "<legend id=\"<?php echo esc_attr( $tgg->ref( 'selectable-values-legend' ) ); ?>\"><?php"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\quiz.php",
+        "line": 248,
+        "context": "html",
+        "code": "echo esc_html( __( 'Questions and answers', 'contact-form-7' ) );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\select.php",
+        "line": 252,
+        "context": "html",
+        "code": "echo esc_html( $field_types['select']['heading'] );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\submit.php",
+        "line": 67,
+        "context": "html",
+        "code": "echo esc_html( $field_types['submit']['heading'] );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\text.php",
+        "line": 266,
+        "context": "html",
+        "code": "echo esc_html( $field_types[$basetype]['heading'] );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\textarea.php",
+        "line": 163,
+        "context": "html",
+        "code": "echo esc_html( $field_types['textarea']['heading'] );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\constant-contact\\contact-form-properties.php",
+        "line": 174,
+        "context": "html",
+        "code": "<h2><?php echo esc_html( __( 'Constant Contact', 'contact-form-7' ) ); ?></h2>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\constant-contact\\contact-form-properties.php",
+        "line": 185,
+        "context": "html",
+        "code": "echo esc_html( __( 'Contact lists', 'contact-form-7' ) );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\constant-contact\\contact-form-properties.php",
+        "line": 194,
+        "context": "html",
+        "code": "echo esc_html( __( 'Contact lists', 'contact-form-7' ) );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\constant-contact\\contact-form-properties.php",
+        "line": 202,
+        "context": "html",
+        "code": "echo esc_html("
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\constant-contact\\service.php",
+        "line": 414,
+        "context": "url",
+        "code": "<form method=\"post\" action=\"<?php echo esc_url( $this->menu_page_url( 'action=setup' ) ); ?>\">"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\constant-contact\\service.php",
+        "line": 419,
+        "context": "html",
+        "code": "<th scope=\"row\"><label for=\"client_id\"><?php echo esc_html( __( 'API Key', 'contact-form-7' ) ); ?></label></th>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\constant-contact\\service.php",
+        "line": 422,
+        "context": "html",
+        "code": "echo esc_html( $this->client_id );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\constant-contact\\service.php",
+        "line": 436,
+        "context": "html",
+        "code": "<th scope=\"row\"><label for=\"client_secret\"><?php echo esc_html( __( 'App Secret', 'contact-form-7' ) ); ?></label></th>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\constant-contact\\service.php",
+        "line": 439,
+        "context": "html",
+        "code": "echo esc_html( wpcf7_mask_password( $this->client_secret, 4, 4 ) );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\constant-contact\\service.php",
+        "line": 453,
+        "context": "html",
+        "code": "<th scope=\"row\"><label for=\"redirect_uri\"><?php echo esc_html( __( 'Redirect URI', 'contact-form-7' ) ); ?></label></th>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\constant-contact\\service.php",
+        "line": 460,
+        "context": "html",
+        "code": "<p class=\"description\"><?php echo esc_html( __( \"Set this URL as the redirect URI.\", 'contact-form-7' ) ); ?></p>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\recaptcha\\service.php",
+        "line": 315,
+        "context": "url",
+        "code": "<form method=\"post\" action=\"<?php echo esc_url( $this->menu_page_url( 'action=setup' ) ); ?>\">"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\recaptcha\\service.php",
+        "line": 320,
+        "context": "html",
+        "code": "<th scope=\"row\"><label for=\"sitekey\"><?php echo esc_html( __( 'Site Key', 'contact-form-7' ) ); ?></label></th>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\recaptcha\\service.php",
+        "line": 323,
+        "context": "html",
+        "code": "echo esc_html( $sitekey );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\recaptcha\\service.php",
+        "line": 337,
+        "context": "html",
+        "code": "<th scope=\"row\"><label for=\"secret\"><?php echo esc_html( __( 'Secret Key', 'contact-form-7' ) ); ?></label></th>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\recaptcha\\service.php",
+        "line": 340,
+        "context": "html",
+        "code": "echo esc_html( wpcf7_mask_password( $secret, 4, 4 ) );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\sendinblue\\contact-form-properties.php",
+        "line": 108,
+        "context": "html",
+        "code": "<h2><?php echo esc_html( __( 'Brevo', 'contact-form-7' ) ); ?></h2>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\sendinblue\\contact-form-properties.php",
+        "line": 119,
+        "context": "html",
+        "code": "echo esc_html( __( 'Contact lists', 'contact-form-7' ) );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\sendinblue\\contact-form-properties.php",
+        "line": 128,
+        "context": "html",
+        "code": "echo esc_html( __( 'Contact lists', 'contact-form-7' ) );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\sendinblue\\contact-form-properties.php",
+        "line": 136,
+        "context": "html",
+        "code": "echo esc_html("
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\sendinblue\\contact-form-properties.php",
+        "line": 202,
+        "context": "html",
+        "code": "echo esc_html( __( 'Welcome email', 'contact-form-7' ) );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\sendinblue\\contact-form-properties.php",
+        "line": 211,
+        "context": "html",
+        "code": "echo esc_html( __( 'Welcome email', 'contact-form-7' ) );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\sendinblue\\contact-form-properties.php",
+        "line": 219,
+        "context": "html",
+        "code": "echo esc_html("
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\sendinblue\\service.php",
+        "line": 186,
+        "context": "url",
+        "code": "<form method=\"post\" action=\"<?php echo esc_url( $this->menu_page_url( 'action=setup' ) ); ?>\">"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\sendinblue\\service.php",
+        "line": 191,
+        "context": "html",
+        "code": "<th scope=\"row\"><label for=\"publishable\"><?php echo esc_html( __( 'API key', 'contact-form-7' ) ); ?></label></th>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\sendinblue\\service.php",
+        "line": 194,
+        "context": "html",
+        "code": "echo esc_html( wpcf7_mask_password( $api_key, 4, 8 ) );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\stripe\\service.php",
+        "line": 209,
+        "context": "url",
+        "code": "<form method=\"post\" action=\"<?php echo esc_url( $this->menu_page_url( 'action=setup' ) ); ?>\">"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\stripe\\service.php",
+        "line": 214,
+        "context": "html",
+        "code": "<th scope=\"row\"><label for=\"publishable\"><?php echo esc_html( __( 'Publishable Key', 'contact-form-7' ) ); ?></label></th>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\stripe\\service.php",
+        "line": 217,
+        "context": "html",
+        "code": "echo esc_html( $publishable );"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\stripe\\service.php",
+        "line": 231,
+        "context": "html",
+        "code": "<th scope=\"row\"><label for=\"secret\"><?php echo esc_html( __( 'Secret Key', 'contact-form-7' ) ); ?></label></th>"
+    },
+    {
+        "file": "plugins\\contact-form-7\\contact-form-7\\modules\\stripe\\service.php",
+        "line": 234,
+        "context": "html",
+        "code": "echo esc_html( wpcf7_mask_password( $secret ) );"
+    }
+]
