@@ -1,6 +1,7 @@
 import optparse, os
 from modules.wordpress_crawler import SlugList, SlugDownload
 from modules.exploit.cross_site_scripting import XSS
+from modules.exploit.sql_injection import SQLI
 #from modules.exploit.sql_injection import class_name
 #from modules.exploit.php_object_injection import class_name
 
@@ -49,3 +50,11 @@ if __name__ == "__main__":
         print(f"[*] {plugin} 플러그인(XSS 검사) -> 결과 저장: {plugin_result_dir}")
         scanner = XSS(plugin_path, plugin_result_dir)
         scanner.run_scan()
+        
+        # SQLI 검사 실행
+        sqli_result_dir = os.path.join(RESULTS_DIR, f"{plugin}_{slug_version}", "SQLI")
+        os.makedirs(sqli_result_dir, exist_ok=True)
+        
+        print(f"[*] {plugin} 플러그인(SQLI 검사) -> 결과 저장: {sqli_result_dir}")
+        sqli_scanner = SQLI(plugin_path, sqli_result_dir)
+        sqli_scanner.analyze_directory()
