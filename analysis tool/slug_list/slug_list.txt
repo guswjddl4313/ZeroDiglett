@@ -1519,7 +1519,7 @@ zoho-mail 1.6.0
 simple-map 4.9.0
 wp-live-chat-software-for-wordpress 5.0.0
 protect-wp-admin 4.0
-xml-sitemap-generator-for-google 2.1.1
+xml-sitemap-generator-for-google 2.1.2
 wp-simple-booking-calendar 2.0.15
 simple-job-board 2.13.3
 wp-tab-widget 1.2.11
@@ -1621,7 +1621,7 @@ wpematico 2.8
 host-analyticsjs-local 4.8.6
 fuse-social-floating-sidebar 5.4.12
 blank-slate 1.2.1
-burger-companion 7.4
+burger-companion 7.5
 masterstudy-lms-learning-management-system 3.5.21
 metronet-reorder-posts 2.5.3
 echo-knowledge-base 13.41.0
@@ -6567,7 +6567,7 @@ wbounce 1.8.1
 anything-order-by-terms 1.4.0
 cookie-cat 1.4.7
 shipday-for-woocommerce 1.8.2
-imageseo 3.2.0
+imageseo 3.2.1
 counter-block 1.0.0
 visual-biography-editor 1.4
 elementor-contact-form-7 1.0.0
@@ -7784,7 +7784,7 @@ category-subcategory-list-widget 6.0
 protect-schemaorg-markup-in-html-editor 0.6
 karma-by-kadar 1.1.2
 hfd-epost-integration 2.16
-themes-artist-demo-importer 1.0.2
+themes-artist-demo-importer 1.0.3
 mb-imagechimp-rss-feed-enhancer 1.0
 fitness-calculators 2.0.10
 maintenance-notice 1.0.5
