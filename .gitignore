@@ -1,4 +1,6 @@
 plugins/
 vulnerable_poi_plugins/
 slug_list/
-analysis tool\modules\__pycache__
+analysis tool/modules/__pycache__
+results/
+analysis tool/slug_list/
