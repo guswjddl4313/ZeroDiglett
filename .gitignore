@@ -1,3 +1,5 @@
 vulnerable_poi_plugins/
 analysis tool/modules/__pycache__
 results/
+analysis tool/modules/exploit/__pycache__
+analysis tool/plugins
