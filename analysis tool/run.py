@@ -2,8 +2,9 @@ import optparse, os
 from modules.wordpress_crawler import SlugList, SlugDownload
 from modules.exploit.cross_site_scripting import XSS
 from modules.exploit.sql_injection import SQLI
+from modules.exploit.php_object_injection import POI
 #from modules.exploit.sql_injection import class_name
-#from modules.exploit.php_object_injection import class_name
+
 
 PLUGINSS_DIR = "plugins"  # 플러그인 소스 코드 디렉터리
 RESULTS_DIR = "results"  # 결과 저장 디렉터리
@@ -58,3 +59,10 @@ if __name__ == "__main__":
         print(f"[*] {plugin} 플러그인(SQLI 검사) -> 결과 저장: {sqli_result_dir}")
         sqli_scanner = SQLI(plugin_path, sqli_result_dir)
         sqli_scanner.analyze_directory()
+
+        # POI 검사 실행
+        poi_result_dir = os.path.join(RESULTS_DIR, f"{plugin}_{slug_version}", "POI")
+        os.makedirs(poi_result_dir, exist_ok=True)
+        print(f"[*] {plugin} 플러그인(POI 검사) -> 결과 저장: {poi_result_dir}")
+        poi_scanner = POI(plugin_path, poi_result_dir)
+        poi_scanner.save_files()
