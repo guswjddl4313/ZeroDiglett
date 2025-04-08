@@ -65,4 +65,4 @@ if __name__ == "__main__":
         os.makedirs(poi_result_dir, exist_ok=True)
         print(f"[*] {plugin} 플러그인(POI 검사) -> 결과 저장: {poi_result_dir}")
         poi_scanner = POI(plugin_path, poi_result_dir)
-        poi_scanner.save_files()
+        poi_scanner.run_php_scan()
